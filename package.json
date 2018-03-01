@@ -1,0 +1,20 @@
+{
+  "name": "FriendFinder",
+  "version": "1.0.0",
+  "description": "No New Friends, No New Friends, No, No New? Use this friend finder to find new friends asap!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sean-arca/FriendFinder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sean-arca/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/sean-arca/FriendFinder#readme"
+}
