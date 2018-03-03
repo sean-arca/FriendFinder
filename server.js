@@ -13,6 +13,7 @@ app.use(bodyParser.json());
 
 // Routes
 require(path.join(__dirname, './app/routing/htmlRoutes'))(app);
+require(path.join(__dirname, './app/routing/apiRoutes'))(app);
 
 // Listen to PORT
 app.listen(PORT, function() {
