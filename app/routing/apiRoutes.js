@@ -16,17 +16,17 @@ module.exports = function (app) {
         var userData = req.body;
         var userName = userData.name;
         var userScores = userData.scores;
-        console.log("userData = " + JSON.stringify(userData));
+        // console.log("userData = " + JSON.stringify(userData)); test
         
         // Match scores
-        console.log(`${userName}'s scores are ${userScores}`);
+        // console.log(`${userName}'s scores are ${userScores}`); test
         var matchName = "";
         var matchImg = "";
-        var compareScore = 100;
+        var compareScore = 20;
 
         // Loop thru other Friends and check scores
         for (let i = 0; i < friends.length; i++) {
-            console.log('Friend = ' + JSON.stringify(friends[i]));
+            console.log('Friend = ' + JSON.stringify(friends[i].name));
             
             var difference = 0;
             for (let j = 0; j < userScores.length; j++) {
@@ -51,6 +51,10 @@ module.exports = function (app) {
         friends.push(userData);
 
         // Response
-        res.json({status: "OK"});
+        res.json({
+            status: "OK",
+            matchName: matchName,
+            matchImg: matchImg
+        });
     });
 };
